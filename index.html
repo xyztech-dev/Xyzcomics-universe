@@ -31,7 +31,6 @@
     <style>
         body { background-color: #0b0d11; color: #f3f4f6; font-family: 'Inter', sans-serif; overflow-x: hidden; }
         .comic-title { font-family: 'Oswald', sans-serif; letter-spacing: 0.05em; text-transform: uppercase; }
-        /* Custom scrollbar */
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: #0b0d11; }
         ::-webkit-scrollbar-thumb { background: #1e2433; border-radius: 4px; }
@@ -53,7 +52,6 @@
     <!-- Sticky Frosted-Glass Header -->
     <header id="site-header" class="fixed top-0 left-0 right-0 z-50 glass-header px-4 lg:px-12 py-3.5 transition-all duration-300">
         <div class="max-w-7xl mx-auto flex items-center justify-between">
-            <!-- Brand Logo -->
             <a href="#" class="flex items-center space-x-3 group">
                 <div class="w-10 h-10 rounded-xl bg-accent text-black font-comic font-black text-xl flex items-center justify-center shadow-lg shadow-accent/20 group-hover:scale-105 transition-transform">
                     XYZ
@@ -64,7 +62,6 @@
                 </div>
             </a>
 
-            <!-- Desktop Navigation -->
             <nav class="hidden md:flex items-center space-x-8 font-medium text-sm text-slate-300">
                 <a href="#universes" class="hover:text-accent transition-colors">Universes</a>
                 <a href="#characters" class="hover:text-accent transition-colors">Characters</a>
@@ -73,23 +70,20 @@
                 <a href="#about" class="hover:text-accent transition-colors">About Us</a>
             </nav>
 
-            <!-- Action Buttons -->
             <div class="hidden md:flex items-center space-x-4">
-                <button onclick="openReadModal('Crow Angel Universe - Episode 10: Convergence & Clash', 'crow')" class="px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-semibold uppercase tracking-wider text-accent border border-accent/30 transition-all shadow-sm">
-                    <i class="fa-solid fa-book-open mr-1.5"></i> Read Preview
+                <button onclick="openProfileModal('azrath')" class="px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-semibold uppercase tracking-wider text-accent border border-accent/30 transition-all shadow-sm">
+                    <i class="fa-solid fa-user-shield mr-1.5"></i> Featured Hero
                 </button>
                 <a href="#issues" class="px-5 py-2 rounded-lg bg-accent hover:bg-accentHover text-black font-comic font-bold text-sm tracking-wide transition-all shadow-lg shadow-accent/20">
                     Get Issues
                 </a>
             </div>
 
-            <!-- Mobile Menu Toggle -->
             <button id="mobile-menu-btn" class="md:hidden text-slate-300 hover:text-white p-2 focus:outline-none">
                 <i class="fa-solid fa-bars text-xl"></i>
             </button>
         </div>
 
-        <!-- Mobile Menu Dropdown -->
         <div id="mobile-menu" class="hidden md:hidden absolute top-full left-0 w-full bg-darkBg/95 backdrop-blur-xl border-b border-borderCol px-6 py-6 space-y-4 shadow-2xl">
             <a href="#universes" class="block text-base font-medium text-slate-200 hover:text-accent">Universes</a>
             <a href="#characters" class="block text-base font-medium text-slate-200 hover:text-accent">Characters</a>
@@ -97,8 +91,8 @@
             <a href="#studio" class="block text-base font-medium text-slate-200 hover:text-accent">Studio & Submissions</a>
             <a href="#about" class="block text-base font-medium text-slate-200 hover:text-accent">About Us</a>
             <div class="pt-4 flex flex-col space-y-3">
-                <button onclick="openReadModal('Crow Angel Universe - Episode 10: Convergence & Clash', 'crow')" class="w-full py-2.5 rounded-lg bg-slate-800 text-accent font-semibold text-center border border-accent/30">
-                    Read Preview
+                <button onclick="openProfileModal('azrath')" class="w-full py-2.5 rounded-lg bg-slate-800 text-accent font-semibold text-center border border-accent/30">
+                    Featured Hero Profile
                 </button>
                 <a href="#issues" class="w-full py-2.5 rounded-lg bg-accent text-black font-comic font-bold text-center">
                     Get Issues
@@ -168,12 +162,12 @@
                         </div>
                         <h3 class="comic-title text-2xl font-bold text-white">Crow Angel Universe</h3>
                         <p class="text-slate-400 text-sm leading-relaxed">
-                            A celestial-meets-urban realm where divine retribution, cosmic energy manipulation[span_0](start_span)[span_0](end_span), and ancient artifacts collide with street-level justice.
+                            A celestial-meets-urban realm where divine retribution, cosmic energy manipulation[span_1](start_span)[span_1](end_span), and ancient artifacts collide with street-level justice.
                         </p>
                         <div class="flex flex-wrap gap-2 pt-2">
-                            <span class="px-2.5 py-1 rounded-md bg-darkBg text-slate-300 text-xs border border-borderCol">Azrath (Crow Angel)[span_1](start_span)[span_1](end_span)</span>
-                            <span class="px-2.5 py-1 rounded-md bg-darkBg text-slate-300 text-xs border border-borderCol">Nymera[span_2](start_span)[span_2](end_span)</span>
-                            <span class="px-2.5 py-1 rounded-md bg-darkBg text-slate-300 text-xs border border-borderCol">Virelya[span_3](start_span)[span_3](end_span)</span>
+                            <span class="px-2.5 py-1 rounded-md bg-darkBg text-slate-300 text-xs border border-borderCol">Azrath (Crow Angel)[span_2](start_span)[span_2](end_span)</span>
+                            <span class="px-2.5 py-1 rounded-md bg-darkBg text-slate-300 text-xs border border-borderCol">Nymera[span_3](start_span)[span_3](end_span)</span>
+                            <span class="px-2.5 py-1 rounded-md bg-darkBg text-slate-300 text-xs border border-borderCol">Virelya[span_4](start_span)[span_4](end_span)</span>
                         </div>
                     </div>
                     <div class="pt-6 mt-6 border-t border-borderCol/60 flex items-center justify-between">
@@ -191,12 +185,12 @@
                         </div>
                         <h3 class="comic-title text-2xl font-bold text-white">The Void Ascendant</h3>
                         <p class="text-slate-400 text-sm leading-relaxed">
-                            Set in Ibadan and beyond[span_4](start_span)[span_4](end_span), hackers and system-corrupters battle reality-patchers, armed with iron axes and thermal sensing tech[span_5](start_span)[span_5](end_span).
+                            Set in Ibadan[span_5](start_span)[span_5](end_span), hackers and system-corrupters battle reality-patchers, armed with iron axes and thermal sensing tech[span_6](start_span)[span_6](end_span).
                         </p>
                         <div class="flex flex-wrap gap-2 pt-2">
-                            <span class="px-2.5 py-1 rounded-md bg-darkBg text-slate-300 text-xs border border-borderCol">Tunde[span_6](start_span)[span_6](end_span)</span>
-                            <span class="px-2.5 py-1 rounded-md bg-darkBg text-slate-300 text-xs border border-borderCol">Fatima[span_7](start_span)[span_7](end_span)</span>
-                            <span class="px-2.5 py-1 rounded-md bg-darkBg text-slate-300 text-xs border border-borderCol">The Architect[span_8](start_span)[span_8](end_span)</span>
+                            <span class="px-2.5 py-1 rounded-md bg-darkBg text-slate-300 text-xs border border-borderCol">Tunde[span_7](start_span)[span_7](end_span)</span>
+                            <span class="px-2.5 py-1 rounded-md bg-darkBg text-slate-300 text-xs border border-borderCol">Fatima[span_8](start_span)[span_8](end_span)</span>
+                            <span class="px-2.5 py-1 rounded-md bg-darkBg text-slate-300 text-xs border border-borderCol">The Architect[span_9](start_span)[span_9](end_span)</span>
                         </div>
                     </div>
                     <div class="pt-6 mt-6 border-t border-borderCol/60 flex items-center justify-between">
@@ -214,12 +208,12 @@
                         </div>
                         <h3 class="comic-title text-2xl font-bold text-white">Guardians of Balance</h3>
                         <p class="text-slate-400 text-sm leading-relaxed">
-                            Aliens scarab fusions, magical staff wielders[span_9](start_span)[span_9](end_span), and motion-blur assassins protecting the equilibrium of multi-dimensional realms.
+                            Aliens scarab fusions, magical staff wielders[span_10](start_span)[span_10](end_span), and motion-blur assassins protecting the equilibrium of multi-dimensional realms.
                         </p>
                         <div class="flex flex-wrap gap-2 pt-2">
-                            <span class="px-2.5 py-1 rounded-md bg-darkBg text-slate-300 text-xs border border-borderCol">Mythes[span_10](start_span)[span_10](end_span)</span>
-                            <span class="px-2.5 py-1 rounded-md bg-darkBg text-slate-300 text-xs border border-borderCol">Klaus[span_11](start_span)[span_11](end_span)</span>
-                            <span class="px-2.5 py-1 rounded-md bg-darkBg text-slate-300 text-xs border border-borderCol">Rynx[span_12](start_span)[span_12](end_span)</span>
+                            <span class="px-2.5 py-1 rounded-md bg-darkBg text-slate-300 text-xs border border-borderCol">Mythes[span_11](start_span)[span_11](end_span)</span>
+                            <span class="px-2.5 py-1 rounded-md bg-darkBg text-slate-300 text-xs border border-borderCol">Klaus[span_12](start_span)[span_12](end_span)</span>
+                            <span class="px-2.5 py-1 rounded-md bg-darkBg text-slate-300 text-xs border border-borderCol">Rynx[span_13](start_span)[span_13](end_span)</span>
                         </div>
                     </div>
                     <div class="pt-6 mt-6 border-t border-borderCol/60 flex items-center justify-between">
@@ -237,7 +231,6 @@
                     <span class="text-xs font-bold text-accent uppercase tracking-widest">Hero Profiles</span>
                     <h2 class="comic-title text-3xl font-bold text-white mt-1">Character Showcase & Art Studio</h2>
                 </div>
-                <!-- Filter Pills -->
                 <div class="flex flex-wrap gap-2 mt-4 md:mt-0">
                     <button onclick="filterByUniverse('all')" class="px-3 py-1.5 rounded-lg bg-accent text-black font-comic text-xs font-bold tracking-wide transition-all filter-btn active-pill" data-filter="all">All Heroes</button>
                     <button onclick="filterByUniverse('crow')" class="px-3 py-1.5 rounded-lg bg-surface border border-borderCol text-slate-300 font-comic text-xs font-bold tracking-wide hover:border-accent transition-all filter-btn" data-filter="crow">Crow Angel</button>
@@ -246,9 +239,8 @@
                 </div>
             </div>
 
-            <!-- Character Grid -->
             <div id="character-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- JavaScript will populate character cards here with custom artwork uploaders -->
+                <!-- Character cards populated dynamically -->
             </div>
         </section>
 
@@ -263,7 +255,6 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Issue 1 -->
                 <div class="bg-surface border border-borderCol rounded-2xl overflow-hidden group hover:border-accent/50 transition-all flex flex-col justify-between">
                     <div>
                         <div class="relative h-64 overflow-hidden bg-gradient-to-br from-slate-900 to-slate-800 flex items-center justify-center">
@@ -276,7 +267,7 @@
                         </div>
                         <div class="p-6 space-y-4">
                             <p class="text-slate-300 text-sm leading-relaxed">
-                                Azrath tests his self-repairing wings over Elyndra[span_13](start_span)[span_13](end_span) before the high-stakes clash against Night Fang[span_14](start_span)[span_14](end_span).
+                                Azrath tests his self-repairing wings over Elyndra[span_14](start_span)[span_14](end_span) before the high-stakes clash against Night Fang[span_15](start_span)[span_15](end_span).
                             </p>
                             <div class="flex items-center justify-between text-xs font-semibold text-slate-400">
                                 <span><i class="fa-solid fa-file-lines mr-1 text-accent"></i> 36 Full Color Pages</span>
@@ -285,8 +276,8 @@
                         </div>
                     </div>
                     <div class="p-6 pt-0 flex items-center gap-3">
-                        <button onclick="openReadModal('Crow Angel Universe - Episode 10: Convergence & Clash', 'crow')" class="flex-1 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-accent font-comic font-bold text-xs uppercase tracking-wider border border-accent/30 transition-all">
-                            Preview
+                        <button onclick="openProfileModal('azrath')" class="flex-1 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-accent font-comic font-bold text-xs uppercase tracking-wider border border-accent/30 transition-all">
+                            Hero Profile
                         </button>
                         <button onclick="showCartMessage('Crow Angel #10 added to cart!')" class="flex-1 py-2.5 rounded-xl bg-accent hover:bg-accentHover text-black font-comic font-bold text-xs uppercase tracking-wider transition-all shadow-lg shadow-accent/25">
                             Buy Now
@@ -294,7 +285,6 @@
                     </div>
                 </div>
 
-                <!-- Issue 2 -->
                 <div class="bg-surface border border-borderCol rounded-2xl overflow-hidden group hover:border-accent/50 transition-all flex flex-col justify-between">
                     <div>
                         <div class="relative h-64 overflow-hidden bg-gradient-to-br from-slate-900 to-slate-800 flex items-center justify-center">
@@ -307,7 +297,7 @@
                         </div>
                         <div class="p-6 space-y-4">
                             <p class="text-slate-300 text-sm leading-relaxed">
-                                System corruption spreads across Ibadan[span_15](start_span)[span_15](end_span). Tunde wields his iron axe buffer while Fatima scans thermal signatures[span_16](start_span)[span_16](end_span).
+                                System corruption spreads across Ibadan[span_16](start_span)[span_16](end_span). Tunde wields his iron axe buffer while Fatima scans thermal signatures[span_17](start_span)[span_17](end_span).
                             </p>
                             <div class="flex items-center justify-between text-xs font-semibold text-slate-400">
                                 <span><i class="fa-solid fa-file-lines mr-1 text-comicBlue"></i> 42 Full Color Pages</span>
@@ -316,8 +306,8 @@
                         </div>
                     </div>
                     <div class="p-6 pt-0 flex items-center gap-3">
-                        <button onclick="openReadModal('The Void Ascendant - Chapter 1: The System Glitch in Ibadan', 'void')" class="flex-1 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-comicBlue font-comic font-bold text-xs uppercase tracking-wider border border-comicBlue/30 transition-all">
-                            Preview
+                        <button onclick="openProfileModal('tunde')" class="flex-1 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-comicBlue font-comic font-bold text-xs uppercase tracking-wider border border-comicBlue/30 transition-all">
+                            Hero Profile
                         </button>
                         <button onclick="showCartMessage('The Void Ascendant #1 added to cart!')" class="flex-1 py-2.5 rounded-xl bg-comicBlue hover:bg-cyan-400 text-black font-comic font-bold text-xs uppercase tracking-wider transition-all shadow-lg shadow-comicBlue/25">
                             Buy Now
@@ -325,7 +315,6 @@
                     </div>
                 </div>
 
-                <!-- Issue 3 -->
                 <div class="bg-surface border border-borderCol rounded-2xl overflow-hidden group hover:border-accent/50 transition-all flex flex-col justify-between">
                     <div>
                         <div class="relative h-64 overflow-hidden bg-gradient-to-br from-slate-900 to-slate-800 flex items-center justify-center">
@@ -338,7 +327,7 @@
                         </div>
                         <div class="p-6 space-y-4">
                             <p class="text-slate-300 text-sm leading-relaxed">
-                                Alien scarab fusion meets motion-blur plasma daggers. Klaus opens dimensional portals with his transformation staff[span_17](start_span)[span_17](end_span).
+                                Alien scarab fusion meets motion-blur plasma daggers. Klaus opens dimensional portals with his transformation staff[span_18](start_span)[span_18](end_span).
                             </p>
                             <div class="flex items-center justify-between text-xs font-semibold text-slate-400">
                                 <span><i class="fa-solid fa-file-lines mr-1 text-accent"></i> 128 Pages Omnibus</span>
@@ -347,8 +336,8 @@
                         </div>
                     </div>
                     <div class="p-6 pt-0 flex items-center gap-3">
-                        <button onclick="openReadModal('Guardians of Balance - Chapter 1: The Thief & The Scarab', 'guardians')" class="flex-1 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-accent font-comic font-bold text-xs uppercase tracking-wider border border-accent/30 transition-all">
-                            Preview
+                        <button onclick="openProfileModal('mythes')" class="flex-1 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-accent font-comic font-bold text-xs uppercase tracking-wider border border-accent/30 transition-all">
+                            Hero Profile
                         </button>
                         <button onclick="showCartMessage('Guardians of Balance Omnibus added to cart!')" class="flex-1 py-2.5 rounded-xl bg-accent hover:bg-accentHover text-black font-comic font-bold text-xs uppercase tracking-wider transition-all shadow-lg shadow-accent/25">
                             Buy Now
@@ -358,7 +347,7 @@
             </div>
         </section>
 
-        <!-- Publisher Studio & Creator Submissions Section -->
+        <!-- Studio & Submissions -->
         <section id="studio" class="bg-surface border border-borderCol rounded-3xl p-8 lg:p-12 space-y-8">
             <div class="max-w-2xl space-y-3">
                 <span class="text-xs font-bold text-accent uppercase tracking-widest">XYZ Comics Studio</span>
@@ -408,7 +397,7 @@
                     XYZ Comics was founded on a singular belief: comic creators deserve complete artistic freedom, premium physical and digital editions, and universes that challenge conventional boundaries. 
                 </p>
                 <p class="text-slate-400 text-sm leading-relaxed">
-                    From the celestial realms of Crow Angel[span_18](start_span)[span_18](end_span) and the cybernetic corruption of Ibadan in The Void Ascendant[span_19](start_span)[span_19](end_span), to the multi-dimensional equilibrium of Guardians of Balance[span_20](start_span)[span_20](end_span) — our catalog is crafted for true comic enthusiasts.
+                    From the celestial realms of Crow Angel[span_19](start_span)[span_19](end_span) and the cybernetic corruption of Ibadan in The Void Ascendant[span_20](start_span)[span_20](end_span), to the multi-dimensional equilibrium of Guardians of Balance[span_21](start_span)[span_21](end_span) — our catalog is crafted for true comic enthusiasts.
                 </p>
                 <div class="grid grid-cols-3 gap-4 pt-4">
                     <div class="bg-surface border border-borderCol p-4 rounded-xl text-center">
@@ -466,29 +455,29 @@
         </div>
     </footer>
 
-    <!-- Interactive Script / Issue Reader Modal -->
-    <div id="read-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden flex items-center justify-center p-4">
+    <!-- Character Profile Modal -->
+    <div id="profile-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden flex items-center justify-center p-4">
         <div class="bg-surface border border-borderCol rounded-3xl max-w-2xl w-full max-h-[85vh] overflow-y-auto p-6 sm:p-8 space-y-6 relative shadow-2xl">
-            <button onclick="closeReadModal()" class="absolute top-6 right-6 text-slate-400 hover:text-white p-2">
+            <button onclick="closeProfileModal()" class="absolute top-6 right-6 text-slate-400 hover:text-white p-2">
                 <i class="fa-solid fa-xmark text-xl"></i>
             </button>
-            <div class="space-y-2">
-                <span class="px-2.5 py-1 rounded-full bg-accent/10 text-accent font-comic text-[10px] uppercase font-semibold border border-accent/20">Interactive Reader Studio</span>
-                <h3 id="modal-title" class="comic-title text-2xl font-bold text-white">Issue Preview</h3>
+            <div class="space-y-1">
+                <span id="modal-universe" class="px-2.5 py-1 rounded-full bg-accent/10 text-accent font-comic text-[10px] uppercase font-semibold border border-accent/20">Universe Dossier</span>
+                <h3 id="modal-name" class="comic-title text-3xl font-bold text-white mt-2">Character Name</h3>
             </div>
             <div id="modal-content" class="space-y-4 text-slate-300 text-sm leading-relaxed border-t border-b border-borderCol py-6">
-                <!-- Dynamic Content inserted via JS -->
+                <!-- Dynamically populated character powers, weaknesses, and personality -->
             </div>
             <div class="flex items-center justify-between pt-2">
-                <span class="text-xs text-slate-500"><i class="fa-solid fa-shield-halved mr-1 text-accent"></i> XYZ Comics Official Reader</span>
-                <button onclick="closeReadModal()" class="px-6 py-2 rounded-xl bg-accent hover:bg-accentHover text-black font-comic font-bold text-xs uppercase tracking-wider transition-all">
-                    Close Reader
+                <span class="text-xs text-slate-500"><i class="fa-solid fa-shield-halved mr-1 text-accent"></i> Official Character Bible</span>
+                <button onclick="closeProfileModal()" class="px-6 py-2 rounded-xl bg-accent hover:bg-accentHover text-black font-comic font-bold text-xs uppercase tracking-wider transition-all">
+                    Close Dossier
                 </button>
             </div>
         </div>
     </div>
 
-    <!-- Toast Notification Box -->
+    <!-- Toast Notification -->
     <div id="toast" class="fixed bottom-6 right-6 z-50 bg-surface border border-accent text-white px-6 py-3.5 rounded-xl shadow-2xl flex items-center space-x-3 transform translate-y-32 opacity-0 transition-all duration-300">
         <div class="w-7 h-7 rounded-full bg-accent text-black flex items-center justify-center font-bold text-xs">
             <i class="fa-solid fa-check"></i>
@@ -496,9 +485,9 @@
         <span id="toast-msg" class="text-xs font-medium">Notification message</span>
     </div>
 
-    <!-- Application Logic Script -->
+    <!-- Application Script -->
     <script>
-        // Character Database featuring all characters across the 3 universes with custom art support
+        // Character Database with Detailed Powers, Weaknesses, and Personalities
         const charactersData = [
             // CROW ANGEL UNIVERSE
             {
@@ -506,8 +495,10 @@
                 name: 'Azrath (Crow Angel)',
                 universe: 'crow',
                 universeName: 'Crow Angel Universe',
-                powers: 'AeroArmor, 200+ ton strength, cosmic energy projection, circular weapon[span_21](start_span)[span_21](end_span)',
-                desc: 'The legendary champion clad in unbreakable AeroArmor, wielding supreme cosmic energy and circular combat weaponry against celestial tyrants[span_22](start_span)[span_22](end_span).',
+                powers: 'Self-repairing wings, 200+ ton strength, cosmic energy projection, circular returning weapon, near-indestructible skin[span_22](start_span)[span_22](end_span).',
+                weaknesses: 'Overusing his wings can destabilize them; heavy emotional attachments can occasionally cloud his strategic judgment under high-pressure scenarios[span_23](start_span)[span_23](end_span).',
+                personality: 'Stoic, disciplined, and deeply conflicted by the divide between his angelic heritage from Elyndra and technological legacy from Syntara[span_24](start_span)[span_24](end_span).',
+                desc: 'The legendary champion clad in battle-worn AeroArmor, protecting the fragile balance between rival worlds.',
                 image: 'https://placehold.co/600x600/141822/e5a93b?text=AZRATH+(CROW+ANGEL)'
             },
             {
@@ -515,8 +506,10 @@
                 name: 'Nymera (Elyndra)',
                 universe: 'crow',
                 universeName: 'Crow Angel Universe',
-                powers: 'Elyndrian shadow-weaving, stealth master, psychic blade constructs',
-                desc: 'Operating from the hidden spires of Elyndra[span_23](start_span)[span_23](end_span), Nymera maneuvers through dark realms with lethal precision and shadow-weaving mastery.',
+                powers: 'Elyndrian shadow-weaving, heightened sensory perception, superior combat reflexes[span_25](start_span)[span_25](end_span).',
+                weaknesses: 'Bound by strict ancestral traditions and political penalties imposed by the rulers of Elyndra[span_26](start_span)[span_26](end_span).',
+                personality: 'Resolute, protective, and unyielding; willing to challenge celestial laws for the safety of her lineage.',
+                desc: 'Chief guard of Elyndra[span_27](start_span)[span_27](end_span), transferring powerful angelic abilities to her hybrid child.',
                 image: 'https://placehold.co/600x600/141822/e5a93b?text=NYMERA+(ELYNDRA)'
             },
             {
@@ -524,8 +517,10 @@
                 name: 'Virelya (Syntara)',
                 universe: 'crow',
                 universeName: 'Crow Angel Universe',
-                powers: 'Syntara frequency control, light-speed reflexes, stellar resonance',
-                desc: 'A warrior from the tech-advanced foe planet Syntara[span_24](start_span)[span_24](end_span), capable of bending light frequencies and emitting devastating stellar resonance shockwaves.',
+                powers: 'Advanced technological mastery, superior physical agility, frequency control.',
+                weaknesses: 'Vulnerable to targeted anti-synth electromagnetic pulses and sector quarantine lockdowns.',
+                personality: 'Calculated, ingenious, and fiercely independent; a warrior forged in Syntara’s rigorous tech environment[span_28](start_span)[span_28](end_span).',
+                desc: 'A warrior from the tech-advanced foe planet Syntara[span_29](start_span)[span_29](end_span), fusing supreme technological mastery with combat agility.',
                 image: 'https://placehold.co/600x600/141822/e5a93b?text=VIRELYA+(SYNTARA)'
             },
             {
@@ -533,8 +528,10 @@
                 name: 'Night Fang',
                 universe: 'crow',
                 universeName: 'Crow Angel Universe',
-                powers: 'Night-stalker agility, razor claws, sonar tracking',
-                desc: 'A shadowy nocturnal vigilante protecting the underworld borders with unmatched agility and razor-sharp talon gauntlets[span_25](start_span)[span_25](end_span).',
+                powers: 'Night-stalker agility, razor cowl fangs, sonar tracking, shadow stealth[span_30](start_span)[span_30](end_span).',
+                weaknesses: 'Relies heavily on low-light environments; disadvantaged in broad daytime open-sky combat.',
+                personality: 'Calculated, sharp, and uncompromising; a relentless shadow vigilante.',
+                desc: 'Elite masked operative featured in the Episode 10 rooftop showdown against Crow Angel[span_31](start_span)[span_31](end_span).',
                 image: 'https://placehold.co/600x600/141822/e5a93b?text=NIGHT+FANG'
             },
             {
@@ -542,8 +539,10 @@
                 name: 'Wave',
                 universe: 'crow',
                 universeName: 'Crow Angel Universe',
-                powers: 'Hydro-kinetic surge, tsunami generation, fluid teleportation',
-                desc: 'Elite cosmic-kinetic operative within the Crow Universe roster[span_26](start_span)[span_26](end_span) commanding ocean currents and atmospheric moisture.',
+                powers: 'Hydro-kinetic surge, cyan kinetic energy conduits, fluid teleportation[span_32](start_span)[span_32](end_span).',
+                weaknesses: 'Requires ambient moisture or kinetic current networks to maintain peak velocity.',
+                personality: 'Fluid, observant, and adaptable; never caught off-guard in shifting terrain.',
+                desc: 'Streamlined navy blue tactical armor integrated with translucent kinetic energy conduits[span_33](start_span)[span_33](end_span).',
                 image: 'https://placehold.co/600x600/141822/e5a93b?text=WAVE'
             },
             {
@@ -551,8 +550,10 @@
                 name: 'Mystra',
                 universe: 'crow',
                 universeName: 'Crow Angel Universe',
-                powers: 'Arcane illusion weaving, telekinetic barrier, mystic sight',
-                desc: 'Enigmatic cosmic sorceress and strategic team asset[span_27](start_span)[span_27](end_span) who distorts reality to confuse and neutralize multi-dimensional threats.',
+                powers: 'Arcane illusion weaving, telekinetic barrier, starlight manipulation[span_34](start_span)[span_34](end_span).',
+                weaknesses: 'Mental exhaustion during prolonged multi-dimensional spellcasting.',
+                personality: 'Enigmatic, wise, and deliberate; acts as the strategic oracle of the team.',
+                desc: 'Enigmatic cosmic sorceress blending dark tactical armor with raw stellar magic[span_35](start_span)[span_35](end_span).',
                 image: 'https://placehold.co/600x600/141822/e5a93b?text=MYSTRA'
             },
             {
@@ -560,19 +561,23 @@
                 name: 'Veylor',
                 universe: 'crow',
                 universeName: 'Crow Angel Universe',
-                powers: 'Heavy plasma cannon, kinetic absorb armor, tactical command',
-                desc: 'Ruthless cosmic warlord and primary hostile force[span_28](start_span)[span_28](end_span) equipped with heavy plasma artillery and indestructible plating.',
+                powers: 'Heavy obsidian jagged plates, crimson accent alloy, plasma cannon command[span_36](start_span)[span_36](end_span).',
+                weaknesses: 'Slower maneuverability due to heavy mechanized plating.',
+                personality: 'Ruthless, domineering, and uncompromisingly ambitious; seeks total cosmic dominion.',
+                desc: 'Ruthless cosmic warlord and primary adversary commanding heavy militarized plating[span_37](start_span)[span_37](end_span).',
                 image: 'https://placehold.co/600x600/141822/e5a93b?text=VEYLOR'
             },
 
             // THE VOID ASCENDANT
             {
                 id: 'tunde',
-                name: 'Tunde',
+                name: 'Tunde (Void Ascendant)',
                 universe: 'void',
                 universeName: 'The Void Ascendant',
-                powers: 'System Corruption, Iron Axe Buffer, cyber-kinetic endurance[span_29](start_span)[span_29](end_span)',
-                desc: 'Rooted in futuristic Ibadan[span_30](start_span)[span_30](end_span), Tunde hacks core mainframe matrices while wielding a heavy-duty iron axe buffer[span_31](start_span)[span_31](end_span) charged with volatile electrical surges.',
+                powers: 'System Corruption, spatial deletion, iron axe acting as a physical stability buffer[span_38](start_span)[span_38](end_span).',
+                weaknesses: 'Severe physical and mental tax from void feedback; over-reliance on the iron axe buffer to prevent self-deletion[span_39](start_span)[span_39](end_span).',
+                personality: 'Street-smart, resilient, and unyielding; speaks with local Ibadan flavor and refuses to let systemic corruption win ("No be my portion")[span_40](start_span)[span_40](end_span).',
+                desc: 'Rooted in futuristic Ibadan[span_41](start_span)[span_41](end_span), wielding an iron axe stability buffer against spatial deletion and system glitch anomalies[span_42](start_span)[span_42](end_span).',
                 image: 'https://placehold.co/600x600/141822/00d2ff?text=TUNDE+(IBADAN)'
             },
             {
@@ -580,8 +585,10 @@
                 name: 'Fatima',
                 universe: 'void',
                 universeName: 'The Void Ascendant',
-                powers: 'Thermal sensing, tactical grid mapping, silent override[span_32](start_span)[span_32](end_span)',
-                desc: 'Elite tactical specialist specializing in thermal sensing and structural heat signature tracking across sprawling urban sectors[span_33](start_span)[span_33](end_span).',
+                powers: 'Thermal sensing, structural heat signature analysis, tactical combat evaluation[span_43](start_span)[span_43](end_span).',
+                weaknesses: 'Thermal visual feeds can be blinded by extreme ambient heat flares or specialized dampening fields.',
+                personality: 'Sharp, analytical, and hyper-focused; transforms tactical data into decisive combat execution.',
+                desc: 'Elite tactical specialist reading thermal signatures through obstacles across the Ibadan underworld[span_44](start_span)[span_44](end_span).',
                 image: 'https://placehold.co/600x600/141822/00d2ff?text=FATIMA'
             },
             {
@@ -589,8 +596,10 @@
                 name: 'Mallam Jide',
                 universe: 'void',
                 universeName: 'The Void Ascendant',
-                powers: 'Quantum node slicing, firewall disruption, neural encryption[span_34](start_span)[span_34](end_span)',
-                desc: 'Supporting character and technical expert in the Ibadan underground network[span_35](start_span)[span_35](end_span).',
+                powers: 'Quantum node slicing, firewall disruption, neural encryption decoding[span_45](start_span)[span_45](end_span).',
+                weaknesses: 'Operating purely as a cyber/intel asset without frontline physical durability.',
+                personality: 'Wise, cautious, and deeply knowledgeable about the hidden history of the city grid.',
+                desc: 'Supporting underground expert navigating the digital corridors of Ibadan[span_46](start_span)[span_46](end_span).',
                 image: 'https://placehold.co/600x600/141822/00d2ff?text=MALLAM+JIDE'
             },
             {
@@ -598,8 +607,10 @@
                 name: 'Dayo',
                 universe: 'void',
                 universeName: 'The Void Ascendant',
-                powers: 'Kinetic dash, EMP burst generation, reflex overdrive[span_36](start_span)[span_36](end_span)',
-                desc: 'Supporting operative in the Ibadan resistance[span_37](start_span)[span_37](end_span), slipping through corporate lockdowns using localized EMP bursts.',
+                powers: 'Kinetic dash, EMP burst generation, reflex overdrive[span_47](start_span)[span_47](end_span).',
+                weaknesses: 'EMP generation requires cooling intervals between activations.',
+                personality: 'Brisk, daring, and quick-witted under hostile pressure.',
+                desc: 'Street-smart operative slipping through corporate lockdown checkpoints with localized EMP pulses[span_48](start_span)[span_48](end_span).',
                 image: 'https://placehold.co/600x600/141822/00d2ff?text=DAYO'
             },
             {
@@ -607,8 +618,10 @@
                 name: 'The Architect',
                 universe: 'void',
                 universeName: 'The Void Ascendant',
-                powers: 'Reality patcher, codebase rewriting, spatial deletion[span_38](start_span)[span_38](end_span)',
-                desc: 'The supreme antagonist of the Void Ascendant universe who treats physical reality as editable source code and commands deletion enforcers[span_39](start_span)[span_39](end_span).',
+                powers: 'Reality patching, codebase rewriting, spatial deletion enforcer command[span_49](start_span)[span_49](end_span).',
+                weaknesses: 'Bound by strict procedural system logic and anomaly detection parameters.',
+                personality: 'Cold, clinical, and authoritarian; views human existence as minor errors in need of correction.',
+                desc: 'Supreme antagonist who views physical reality as editable code, sending enforcers to delete anomalies[span_50](start_span)[span_50](end_span).',
                 image: 'https://placehold.co/600x600/141822/00d2ff?text=THE+ARCHITECT'
             },
 
@@ -618,8 +631,10 @@
                 name: 'Mythes',
                 universe: 'guardians',
                 universeName: 'Guardians of Balance',
-                powers: 'Alien scarab fusion origin (7-8 scarabs), cosmic strength[span_40](start_span)[span_40](end_span)',
-                desc: 'Initially a thief who stole scarabs from an alien ship, fusing them into his biology[span_41](start_span)[span_41](end_span) to command continent-shifting strength scale[span_42](start_span)[span_42](end_span).',
+                powers: 'Alien scarab fusion origin (7-8 scarabs), continent-shifting strength scale, cosmic resilience[span_51](start_span)[span_51](end_span).',
+                weaknesses: 'Prone to overconfidence; vulnerability to cosmic-tier artifact weapons and high-intensity energy drain.',
+                personality: 'Initially lazy and rebellious (running away from warrior family training to become a thief on Earth), he evolves into a dedicated cosmic defender after near-fatal defeat[span_52](start_span)[span_52](end_span).',
+                desc: 'Former thief who fused with ancient scarabs while raiding an alien transport ship, unlocking continent-shifting power[span_53](start_span)[span_53](end_span).',
                 image: 'https://placehold.co/600x600/141822/e5a93b?text=MYTHES'
             },
             {
@@ -627,8 +642,10 @@
                 name: 'Klaus',
                 universe: 'guardians',
                 universeName: 'Guardians of Balance',
-                powers: 'Transformation staff, elemental magic, dimensional portals[span_43](start_span)[span_43](end_span)',
-                desc: 'Master of mystic arts wielding a legendary transformation staff capable of opening portals between dimensions and manifesting a godlike white-robe form[span_44](start_span)[span_44](end_span).',
+                powers: 'Transformation staff, elemental magic, portal generation, godlike white-robe form[span_54](start_span)[span_54](end_span).',
+                weaknesses: 'Staff must be physically retrieved or summoned; vulnerable when separated from his mystical artifacts.',
+                personality: 'Serene, burdened by past family defeat, and intensely focused on preserving universal equilibrium[span_55](start_span)[span_55](end_span).',
+                desc: 'Mystic guardian wielding a staff that triggers a godlike white-robe form and opens multi-dimensional portals[span_56](start_span)[span_56](end_span).',
                 image: 'https://placehold.co/600x600/141822/e5a93b?text=KLAUS'
             },
             {
@@ -636,8 +653,10 @@
                 name: 'Rynx',
                 universe: 'guardians',
                 universeName: 'Guardians of Balance',
-                powers: 'Twin plasma daggers, tribal-energy armor, blue-white motion blur speed[span_45](start_span)[span_45](end_span)',
-                desc: 'Agile, playful warrior wielding twin plasma daggers and moving with blue-white motion blur speed[span_46](start_span)[span_46](end_span).',
+                powers: 'Twin plasma daggers, tribal-energy armor, blue-white motion blur speed[span_57](start_span)[span_57](end_span).',
+                weaknesses: 'Lightweight armor offers minimal protection against heavy artillery impacts.',
+                personality: 'Playful, witty, agile, and fond of a smirk; brings comic relief paired with lethal execution[span_58](start_span)[span_58](end_span).',
+                desc: 'Agile and playful warrior leaving blue-white motion blur trails behind twin plasma daggers[span_59](start_span)[span_59](end_span).',
                 image: 'https://placehold.co/600x600/141822/e5a93b?text=RYNX'
             },
             {
@@ -645,13 +664,15 @@
                 name: 'The Source',
                 universe: 'guardians',
                 universeName: 'Guardians of Balance',
-                powers: 'Omni-dimensional awareness, equilibrium anchor, energy pulse[span_47](start_span)[span_47](end_span)',
-                desc: 'The primordial cosmic entity governing creation, entropy, and balance across the wider shared cosmology[span_48](start_span)[span_48](end_span).',
+                powers: 'Omni-dimensional awareness, equilibrium anchor, creation and entropy regulation[span_60](start_span)[span_60](end_span).',
+                weaknesses: 'Bound by the cosmic laws of balance between creation and entropy.',
+                personality: 'Impartial, transcendent, and eternal; beyond mortal emotions.',
+                desc: 'The primordial cosmic nexus balancing creation, entropy, and universal order[span_61](start_span)[span_61](end_span).',
                 image: 'https://placehold.co/600x600/141822/e5a93b?text=THE+SOURCE'
             }
         ];
 
-        // Render Character Cards with Custom Artwork Uploader
+        // Render Character Cards
         function renderCharacters(chars) {
             const grid = document.getElementById('character-grid');
             if (chars.length === 0) {
@@ -662,7 +683,6 @@
             grid.innerHTML = chars.map(char => `
                 <div class="bg-surface border border-borderCol rounded-2xl overflow-hidden group hover:border-accent/50 transition-all flex flex-col justify-between">
                     <div>
-                        <!-- Portrait Container with Artwork Uploader Overlay -->
                         <div class="relative h-64 bg-darkBg overflow-hidden group/img">
                             <img id="img-${char.id}" src="${char.image}" alt="${char.name}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x600/141822/e5a93b?text=XYZ+COMICS'">
                             <div class="absolute inset-0 bg-black/60 opacity-0 group-hover/img:opacity-100 transition-opacity flex items-center justify-center p-4">
@@ -679,7 +699,6 @@
                             </div>
                         </div>
 
-                        <!-- Info -->
                         <div class="p-6 space-y-3">
                             <h3 class="comic-title text-2xl font-bold text-white">${char.name}</h3>
                             <p class="text-xs font-semibold text-accent"><i class="fa-solid fa-bolt mr-1"></i> ${char.powers}</p>
@@ -689,15 +708,15 @@
 
                     <div class="p-6 pt-0 flex items-center justify-between border-t border-borderCol/60 mt-4">
                         <span class="text-[11px] text-slate-500">Custom Art Ready</span>
-                        <button onclick="openReadModal('${char.name} - Lore & Script', '${char.universe}')" class="text-xs font-bold text-accent hover:underline flex items-center space-x-1">
-                            <span>Read Script</span> <i class="fa-solid fa-arrow-right"></i>
+                        <button onclick="openProfileModal('${char.id}')" class="text-xs font-bold text-accent hover:underline flex items-center space-x-1">
+                            <span>Hero Profile</span> <i class="fa-solid fa-arrow-right"></i>
                         </button>
                     </div>
                 </div>
             `).join('');
         }
 
-        // Handle Custom Image Upload per character
+        // Handle Image Upload
         function handleImageUpload(event, charId) {
             const file = event.target.files[0];
             if (file) {
@@ -713,7 +732,7 @@
             }
         }
 
-        // Filter Characters by Search Bar
+        // Search & Filtering
         function filterCharacters() {
             const query = document.getElementById('character-search').value.toLowerCase();
             const filtered = charactersData.filter(c => 
@@ -725,7 +744,6 @@
             renderCharacters(filtered);
         }
 
-        // Filter Characters by Universe Pills
         function filterByUniverse(universeKey) {
             document.querySelectorAll('.filter-btn').forEach(btn => {
                 btn.classList.remove('bg-accent', 'text-black', 'font-bold');
@@ -744,90 +762,40 @@
             }
         }
 
-        // FIXED Interactive Reader Modal Management (Strictly separated by universe)
-        function openReadModal(title, universeType) {
-            document.getElementById('modal-title').innerText = title;
+        // Open Character Profile Modal (Powers, Weaknesses, Personality)
+        function openProfileModal(charId) {
+            const char = charactersData.find(c => c.id === charId);
+            if (!char) return;
+
+            document.getElementById('modal-name').innerText = char.name;
+            document.getElementById('modal-universe').innerText = char.universeName;
+            
             const contentContainer = document.getElementById('modal-content');
-            
-            let htmlContent = '';
-            
-            if (universeType === 'crow') {
-                // Crow Angel Canon Script Data
-                htmlContent = `
-                    <div class="space-y-4">
-                        <div class="p-4 rounded-xl bg-darkBg border border-borderCol">
-                            <span class="text-xs font-bold text-accent uppercase">Panel 1 - Establishing Shot[span_49](start_span)[span_49](end_span)</span>
-                            <p class="text-xs text-slate-300 mt-1">Heavy nocturnal clouds over the divided sector of Elyndra and Syntara[span_50](start_span)[span_50](end_span). A streak of silver-white and matte-black slices through the atmosphere—Azrath (Crow Angel) testing his self-repairing wings[span_51](start_span)[span_51](end_span).</p>
-                        </div>
-                        <div class="p-4 rounded-xl bg-darkBg border border-borderCol">
-                            <span class="text-xs font-bold text-accent uppercase">Panel 2 - Close-up on Azrath[span_52](start_span)[span_52](end_span)</span>
-                            <p class="text-xs text-slate-300 mt-1">His glowing emerald chest emblem pulses steadily against the battle-worn AeroArmor. His eyes narrow as his comms crackle[span_53](start_span)[span_53](end_span).</p>
-                        </div>
-                        <div class="p-4 rounded-xl bg-darkBg border border-borderCol">
-                            <span class="text-xs font-bold text-accent uppercase">Panel 3 - Action Beat[span_54](start_span)[span_54](end_span)</span>
-                            <p class="text-xs text-slate-300 mt-1">Night Fang steps out from the high-rise shadow grid, optical lenses glowing amber-crimson. <em class="text-accent">"You're out of your jurisdiction, Azrath."</em>[span_55](start_span)[span_55](end_span)</p>
-                        </div>
-                        <div class="p-4 rounded-xl bg-darkBg border border-borderCol">
-                            <span class="text-xs font-bold text-accent uppercase">Panel 4 - Combat Clash[span_56](start_span)[span_56](end_span)</span>
-                            <p class="text-xs text-slate-300 mt-1">Azrath's circular returning energy weapon slices the air with kinetic sharpness, clashing directly against Night Fang's blade[span_57](start_span)[span_57](end_span).</p>
-                        </div>
+            contentContainer.innerHTML = `
+                <div class="space-y-4">
+                    <div class="p-4 rounded-xl bg-darkBg border border-borderCol space-y-1">
+                        <span class="text-xs font-bold text-accent uppercase tracking-wider"><i class="fa-solid fa-bolt mr-1"></i> Core Powers & Abilities</span>
+                        <p class="text-xs text-slate-300 leading-relaxed">${char.powers}</p>
                     </div>
-                `;
-            } else if (universeType === 'void') {
-                // The Void Ascendant Canon Script Data (Ibadan Setting)
-                htmlContent = `
-                    <div class="space-y-4">
-                        <div class="p-4 rounded-xl bg-darkBg border border-borderCol">
-                            <span class="text-xs font-bold text-comicBlue uppercase">Panel 1 - Atmospheric Ibadan Skyline[span_58](start_span)[span_58](end_span)</span>
-                            <p class="text-xs text-slate-300 mt-1">Amber dust haze settling over busy streets and corrugated zinc roofs in Ibadan[span_59](start_span)[span_59](end_span). A sudden digital glitch tears across the sky—The Architect's reality-patching enforcers are moving in[span_60](start_span)[span_60](end_span).</p>
-                        </div>
-                        <div class="p-4 rounded-xl bg-darkBg border border-borderCol">
-                            <span class="text-xs font-bold text-comicBlue uppercase">Panel 2 - Alleyway Close-up[span_61](start_span)[span_61](end_span)</span>
-                            <p class="text-xs text-slate-300 mt-1">Tunde stands gripping a heavy iron axe, using it as a physical buffer against the overwhelming kinetic feedback of spatial deletion[span_62](start_span)[span_62](end_span).</p>
-                        </div>
-                        <div class="p-4 rounded-xl bg-darkBg border border-borderCol">
-                            <span class="text-xs font-bold text-comicBlue uppercase">Panel 3 - Dialogue Beat[span_63](start_span)[span_63](end_span)</span>
-                            <p class="text-xs text-slate-300 mt-1">Tunde's hand flickers with dark purple system corruption code. He mutters under his breath: <em class="text-comicBlue">"Una think say una fit overwrite this city? No be my portion."</em>[span_64](start_span)[span_64](end_span)</p>
-                        </div>
-                        <div class="p-4 rounded-xl bg-darkBg border border-borderCol">
-                            <span class="text-xs font-bold text-comicBlue uppercase">Panel 4 - Power Activation[span_65](start_span)[span_65](end_span)</span>
-                            <p class="text-xs text-slate-300 mt-1">Spatial deletion tears open a void pocket, swallowing an incoming enforcer drone whole[span_66](start_span)[span_66](end_span).</p>
-                        </div>
+                    <div class="p-4 rounded-xl bg-darkBg border border-borderCol space-y-1">
+                        <span class="text-xs font-bold text-red-400 uppercase tracking-wider"><i class="fa-solid fa-triangle-exclamation mr-1"></i> Weaknesses & Limitations</span>
+                        <p class="text-xs text-slate-300 leading-relaxed">${char.weaknesses}</p>
                     </div>
-                `;
-            } else if (universeType === 'guardians') {
-                // Guardians of Balance Canon Script Data (Mythes & Scarab Origin)
-                htmlContent = `
-                    <div class="space-y-4">
-                        <div class="p-4 rounded-xl bg-darkBg border border-borderCol">
-                            <span class="text-xs font-bold text-accent uppercase">Panel 1 - Deep Space Cargo Hold[span_67](start_span)[span_67](end_span)</span>
-                            <p class="text-xs text-slate-300 mt-1">Mythes—agile and rogueish, having run away from his warrior family training—slips quietly through an alien transport vessel's vault[span_68](start_span)[span_68](end_span).</p>
-                        </div>
-                        <div class="p-4 rounded-xl bg-darkBg border border-borderCol">
-                            <span class="text-xs font-bold text-accent uppercase">Panel 2 - The Discovery[span_69](start_span)[span_69](end_span)</span>
-                            <p class="text-xs text-slate-300 mt-1">He reaches into a glowing containment unit and snatches the ancient alien scarabs[span_70](start_span)[span_70](end_span). <em class="text-accent">"This should keep me comfortable for a lifetime."</em></p>
-                        </div>
-                        <div class="p-4 rounded-xl bg-darkBg border border-borderCol">
-                            <span class="text-xs font-bold text-accent uppercase">Panel 3 - The Fusion[span_71](start_span)[span_71](end_span)</span>
-                            <p class="text-xs text-slate-300 mt-1">Alarm triggers! The scarabs swarm instantly (7-8 scarabs), sinking directly into Mythes's skin, fusing with his biology in a blinding flash of cosmic energy[span_72](start_span)[span_72](end_span).</p>
-                        </div>
-                        <div class="p-4 rounded-xl bg-darkBg border border-borderCol">
-                            <span class="text-xs font-bold text-accent uppercase">Panel 4 - Transformation[span_73](start_span)[span_73](end_span)</span>
-                            <p class="text-xs text-slate-300 mt-1">Mythes drops to his knees as infinite continent-shifting strength surges through his frame. The thief's life is over; the cosmic balance battle has begun[span_74](start_span)[span_74](end_span).</p>
-                        </div>
+                    <div class="p-4 rounded-xl bg-darkBg border border-borderCol space-y-1">
+                        <span class="text-xs font-bold text-comicBlue uppercase tracking-wider"><i class="fa-solid fa-masks-theater mr-1"></i> Personality & Traits</span>
+                        <p class="text-xs text-slate-300 leading-relaxed">${char.personality}</p>
                     </div>
-                `;
-            }
+                </div>
+            `;
 
-            contentContainer.innerHTML = htmlContent;
-            document.getElementById('read-modal').classList.remove('hidden');
+            document.getElementById('profile-modal').classList.remove('hidden');
         }
 
-        function closeReadModal() {
-            document.getElementById('read-modal').classList.add('hidden');
+        function closeProfileModal() {
+            document.getElementById('profile-modal').classList.add('hidden');
         }
 
-        // Toast Notifications
+        // Toast Notifications & Submission Handlers
         function showToast(msg) {
             const toast = document.getElementById('toast');
             document.getElementById('toast-msg').innerText = msg;
@@ -837,32 +805,15 @@
             }, 3500);
         }
 
-        function showCartMessage(msg) {
-            showToast(msg);
-        }
+        function showCartMessage(msg) { showToast(msg); }
+        function handleSubmission(e) { e.preventDefault(); showToast('Pitch successfully submitted to XYZ Comics Editors!'); e.target.reset(); }
+        function handleSubscribe(e) { e.preventDefault(); showToast('Successfully subscribed to XYZ Comics Fan Legion!'); e.target.reset(); }
 
-        function handleSubmission(e) {
-            e.preventDefault();
-            showToast('Pitch successfully submitted to XYZ Comics Editors!');
-            e.target.reset();
-        }
-
-        function handleSubscribe(e) {
-            e.preventDefault();
-            showToast('Successfully subscribed to XYZ Comics Fan Legion!');
-            e.target.reset();
-        }
-
-        // Mobile menu toggle
         document.getElementById('mobile-menu-btn').addEventListener('click', () => {
-            const menu = document.getElementById('mobile-menu');
-            menu.classList.toggle('hidden');
+            document.getElementById('mobile-menu').classList.toggle('hidden');
         });
 
-        // Initialize Character Grid on load
-        window.onload = function() {
-            renderCharacters(charactersData);
-        }
+        window.onload = function() { renderCharacters(charactersData); }
     </script>
 </body>
 </html>
